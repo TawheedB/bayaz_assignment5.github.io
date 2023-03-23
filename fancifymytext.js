@@ -15,12 +15,12 @@ function function_change(){
 
   }
 }
-function moo()
+function mooButton()
 {
-  var text=document.getElementById("TextID").value;
-  var uppercase_text=text.toUpperCase();
-  var split_text=uppercase_text.split(".");
-  suffixed_text=split_text.join("-Moo");
-  document.getElementById("TextID").value=suffixed_text;
+  var lower=document.getElementById("TextID").value;
+  var upper=lower.toUpperCase();
+  var endMoo=upper.split(".");
+  changedText=endMoo.join("-Moo");
+  document.getElementById("TextID").value=changedText;
 
 }
