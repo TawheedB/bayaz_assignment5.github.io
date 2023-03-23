@@ -15,10 +15,9 @@ function function_change(){
 
   }
 }
-function mooButoon(){
-  var lower=document.getElementById("TextID").value;
-  var uppercase=lower.toUpperCase();
-  var mooText=uppercase.split(".");
-  endMoo=mooText.join("-Moo");
-  document.getElementById("TextID").value=endMoo;
+function mooButton(){
+  TextID.style.textTransform="uppercase"
+  let str=textarea.value.split(".");
+  let str2=str.join("-Moo");
+  TextID.value=str2;
 }
