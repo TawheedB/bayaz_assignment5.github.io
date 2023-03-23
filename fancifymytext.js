@@ -15,9 +15,12 @@ function function_change(){
 
   }
 }
-function mooButton(){
-  TextID.style.textTransform="uppercase"
-  let str=textarea.value.split(".");
-  let str2=str.join("-Moo");
-  TextID.value=str2;
+function moo()
+{
+  var text=document.getElementById("TextID").value;
+  var uppercase_text=text.toUpperCase();
+  var split_text=uppercase_text.split(".");
+  suffixed_text=split_text.join("_Moo");
+  document.getElementById("TextID").value=suffixed_text;
+
 }
