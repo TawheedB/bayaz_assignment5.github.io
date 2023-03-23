@@ -16,9 +16,9 @@ function function_change(){
   }
 }
 function mooButoon(){
-var lower=document.getElementById("TextID").value;
-var uppercase=lower.toUpperCase();
-var mooText=uppercase.split(".");
-endMoo=mooText.join("-Moo");
-document.getElementById("TextID").value=endMoo;
+  var lower=document.getElementById("TextID").value;
+  var uppercase=lower.toUpperCase();
+  var mooText=uppercase.split(".");
+  endMoo=mooText.join("-Moo");
+  document.getElementById("TextID").value=endMoo;
 }
